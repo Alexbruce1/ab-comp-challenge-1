@@ -1,0 +1,323 @@
+body {
+  font-family: open sans;
+}
+
+.boxes {
+  background-color: #eee;
+  display: grid;
+  grid-column-gap: 0;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 60%;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.svg-icon {
+  height: 75px;
+  margin-top: 25%;
+}
+
+.main {
+  margin: 2rem;
+}
+
+.main-title {
+  color: #eee;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.main-intro {
+  color: #eee;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 2rem;
+  width: 75%;
+}
+
+.head-buttons {
+  border: 2px solid #494960;
+  background-color: transparent;
+  color: #494960;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 40px;
+  margin-left: 2rem;
+  transition-duration: .5s;
+  width: 25%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.head-buttons:hover {
+  border-color: #141627;
+  background-color: #687796;
+  color: #141627;
+}
+
+.box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #eee;
+  font-weight: 300;
+  text-align: center;
+}
+
+.box1 {
+  background-color: #94989a;
+  color: #141627;
+  grid-column-end: span 2;
+  text-align: left;
+}
+
+.box2 {
+  background-color: #687796;
+}
+
+.box3 {
+  background-color: #494960;
+}
+
+.box4 {
+  background-color: #5a5f6f;
+}
+
+.box5 {
+  background-color: #141627;
+}
+
+.box6 {
+  background-color: #687796;
+}
+
+.box7 {
+  background-color: #494960;
+}
+
+.box8 {
+  background-color: #5a5f6f;
+}
+
+.box9 {
+  display: none;
+}
+
+.box2:hover {
+  background-image: url(images/gif1.gif);
+}
+
+.box3:hover {
+  background-image: url(images/gif2.gif);
+}
+
+.box4:hover {
+  background-image: url(images/gif3.gif);
+}
+
+.box5:hover {
+  background-image: url(images/gif4.gif);
+}
+
+.box6:hover {
+  background-image: url(images/gif5.gif);
+}
+
+.box7:hover {
+  background-image: url(images/gif6.gif);
+}
+
+.box8:hover {
+  background-image: url(images/gif7.gif);
+}
+
+.image-section {
+  background-image: url(images/larry.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+}
+
+.carousel-buttons {
+  height: 15px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+}
+
+.carousel-button {
+  background-color: #222;
+  border: none;
+  border-radius: 50%;
+  height: 10px;
+  opacity: .5;
+  padding: 0;
+  transition-duration: .1s;
+  width: 10px;
+}
+
+.carousel-button:hover {
+  opacity: .8;
+}
+
+.arrow-button {
+  border-radius: 50%;
+  border: 4px solid #222;
+  height: 6vh;
+  margin: 47vh 1vw 6vh 1vw;
+  opacity: .5;
+  transition-duration: .5s;
+  width: 6vh;
+}
+
+.arrow-button:hover {
+  opacity: .8;
+}
+
+.arrow-right {
+  height: 3vh;
+  margin-left: 3px;
+}
+
+.arrow-left {
+  height: 3vh;
+  margin-right: 3px;
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1206px) {
+  .head-buttons {
+    border-radius: 10px;
+    width: 35%;
+  }
+
+  .boxes {
+    border-radius: 7px 7px 0 0;
+    margin-top: 40vh;
+    width: 100%;
+  }
+
+  .box1 {
+    border-radius: 7px 0 0 0;
+  }
+
+  .box2 {
+    border-radius: 0 7px 0 0;
+  }
+
+  .image-section {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .arrow-button {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    background-size: cover;
+  }
+  
+  .boxes,
+  .image-section {
+    background-color: transparent;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .boxes {
+    grid-template-columns: 50% 50%;
+    margin-top: 50vw;
+  }
+
+  .box {
+    border-radius: 0;
+  }
+
+  .box1 {
+    min-height: 250px;
+  }
+
+  .box9 {
+    background-color: #141627;
+    background-image: url(images/larryface.png);
+    background-position: center bottom;
+    background-size: contain;
+    display: grid;
+  }
+
+  .image-section {
+    background-color: white;
+    background-image: url(images/sendit.jpg);
+    background-size: contain;
+    height: 52vw;
+    top: 0;
+    width: 100vw;
+  }
+
+  .carousel-buttons {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .boxes,
+  .image-section {
+  }
+
+  .head-buttons {
+    display: block;
+    margin: 1rem auto;
+    width: 75%;
+  }
+
+  .boxes {
+    display: inline-block;
+    height: 25vh;
+  }
+
+  .box {
+    height: 30vh;
+    vertical-align: top;
+  }
+
+  .box1 {
+    height: 35vh;
+    min-height: 245px;
+  }
+
+  .main-title {
+    padding-top: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 319px) {
+  html {
+    background-image: url(images/denim.jpg);
+  }
+
+  body {
+    display: none;
+  }
+}
